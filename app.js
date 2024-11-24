@@ -9,6 +9,7 @@ const {registeredHomes}=require("./Routes/dataSubmit")
 const rootDirectory=require("./utils/pathutils")
 const controller=require("./Controllers/host")
 const storeRouter = require("./Routes/storeRouter")
+const { Module } = require("module")
 //apppp
 const app=express();
 app.use(express.urlencoded())
@@ -41,7 +42,4 @@ app.use(dataSubmit)
 // })
 app.use(express.static(path.join(rootDirectory,"public")))//to access the public folder
 app.use(controller.error404)
-app.listen(4200,()=>{
-    console.log("server is running on port 4200");
-    
-})
+module.exports = app;

@@ -2,29 +2,15 @@
     "version": 2,
     "builds": [
       {
-        "src": "app.js",
+        "src": "app.js", 
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
-        "src": "/api/(.*)",
-        "dest": "/api/$1.js"
+        "src": "/(.*)",
+        "dest": "app.js"
       }
-    ],
-    "env": {
-      "NODE_ENV": "production",
-      "DATABASE_URL": "your-database-url",
-      "SECRET_KEY": "your-secret-key"
-    },
-    "static": {
-      "public": "public"
-    },
-    "functions": {
-      "api/**/*.js": {
-        "memory": 512,
-        "maxDuration": 10
-      }
-    }
+    ]
   }
   
