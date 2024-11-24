@@ -221,6 +221,14 @@ h6 {
     border: 1px solid rgba(255, 255, 255, 0.4); /* Adds a subtle border */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Soft shadow for depth */
   }
+  .glass-red-button {
+    background: rgba(230, 173, 173, 0.5); /* Light blue with transparency */
+    backdrop-filter: blur(6px); /* Adds the glass effect */
+    -webkit-backdrop-filter: blur(6px); /* Safari support for blur */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Adds a subtle border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Soft shadow for depth */
+  }
+  
 
   
 }

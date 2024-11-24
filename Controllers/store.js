@@ -10,6 +10,8 @@ const Home=require("../Models/home")
         })
     })
  };
+
+
  exports.getindex=(req,res,next)=>{
     Home.fetchall((registeredHomes)=>{
         res.render("store/home-list",{

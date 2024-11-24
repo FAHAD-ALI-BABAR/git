@@ -22,3 +22,10 @@ exports.submit=(req,res,next)=>{
     res.status(404).sendFile(path.join(rootDirectory,"views","404.html"));
     
 }
+exports.getHostHomes=(req,res,next)=>{
+    Home.fetchall((registeredHomes)=>{
+        res.render("host/host-home-list",{
+            registeredHomes:registeredHomes
+        })
+    })
+ };

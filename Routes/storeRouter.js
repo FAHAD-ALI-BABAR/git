@@ -7,10 +7,11 @@ const { registeredHomes,submit } = require("./dataSubmit");
 const storeController=require("../Controllers/store")
 const getHomes=require("../Controllers/store")
 const Home=require("../Models/home")
-storeRouter.get("/",storeController.getHomes);
+storeRouter.get("/",storeController.getindex);
  storeRouter.get("/bookings",storeController.getbookings);
- storeRouter.get("/home-list",storeController.getindex);
+ storeRouter.get("/home-list",storeController.getHomes);
  storeRouter.get("/fav-list",storeController.getfavourites);
+ 
  
 
  
