@@ -41,7 +41,4 @@ app.use(dataSubmit)
 // })
 app.use(express.static(path.join(rootDirectory,"public")))//to access the public folder
 app.use(controller.error404)
-app.listen(4200,()=>{
-    console.log("server is running on port 4200");
-    
-})
+module.exports=app;
