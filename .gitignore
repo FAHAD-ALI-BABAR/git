@@ -7,35 +7,9 @@ yarn-debug.log
 yarn-error.log
 
 # Environment variables file (sensitive information)
-.env         # .env files should not be committed to Git
+.env        
 
-# Vercel-specific files (deployment files)
-.vercel/
 
-# Build directories (if applicable)
-build/
-dist/
-
-# Dependency directories for package managers (Yarn/PNPM)
-.pnp/
-.pnp.js
-
-# IDE or editor specific files (e.g., VSCode, IntelliJ, etc.)
-.vscode/
-.idea/
-*.swp        # Vim swap files
-
-# npm package lock files (optional)
-# package-lock.json
-# yarn.lock
-
-# Coverage directory used by tools like Mocha, Jest, etc.
-coverage/
-
-# Operating system-specific
-*.log
-*.bak
-*.swp
 
 
 
