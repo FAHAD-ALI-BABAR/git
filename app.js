@@ -42,7 +42,11 @@ app.use(dataSubmit)
 // })
 app.use(express.static(path.join(rootDirectory,"public")))//to access the public folder
 app.use(controller.error404)
+<<<<<<< HEAD
 app.listen(3001,()=>{
     console.log("running");
     
 })
+=======
+module.exports=app;
+>>>>>>> 1c23a9eec9c470268eede9791dfcfe420e6853e6
