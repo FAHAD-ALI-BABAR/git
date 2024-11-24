@@ -1,0 +1,53 @@
+# Node.js dependencies
+node_modules/
+
+# Log files
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Environment variables file (sensitive information)
+.env         # .env files should not be committed to Git
+
+# Vercel-specific files (deployment files)
+.vercel/
+
+# Build directories (if applicable)
+build/
+dist/
+
+# Dependency directories for package managers (Yarn/PNPM)
+.pnp/
+.pnp.js
+
+# IDE or editor specific files (e.g., VSCode, IntelliJ, etc.)
+.vscode/
+.idea/
+*.swp        # Vim swap files
+
+# npm package lock files (optional)
+# package-lock.json
+# yarn.lock
+
+# Coverage directory used by tools like Mocha, Jest, etc.
+coverage/
+
+# Operating system-specific
+*.log
+*.bak
+*.swp
+
+
+
+# Ignore any file that contains sensitive data (e.g., user credentials, API keys)
+*.json         # Only if sensitive files are in JSON format
+*.bak          # Backup files, etc.
+
+# Temporary or auto-generated files
+tmp/
+temp/
+*.log
+*.bak
+*.swp
+
+
