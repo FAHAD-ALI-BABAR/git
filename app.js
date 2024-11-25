@@ -12,6 +12,11 @@ const storeRouter = require("./Routes/storeRouter")
 const { Module } = require("module")
 //apppp
 const app=express();
+app.use((req, res, next) => {
+    res.setHeader("Content-Security-Policy", 
+        "default-src 'self'; script-src 'self' https://vercel.live; object-src 'none'; style-src 'self' 'unsafe-inline';");
+    next();
+});
 app.use(express.urlencoded())
 app.set("view engine","ejs")//to set ejs template engine
 app.set("views ","views")
