@@ -12,19 +12,19 @@ const storeRouter = require("./Routes/storeRouter")
 const { Module } = require("module")
 //apppp
 const app=express();
-app.use((req, res, next) => {
-    res.setHeader("Content-Security-Policy", 
-      "default-src 'self'; " +
-      "script-src 'self' https://vercel.live; " +   // Allow Vercel scripts
-      "style-src 'self' 'unsafe-inline'; " +        // Allow inline styles
-      "img-src 'self' data:; " +                    // Allow images from self and data URIs
-      "font-src 'self'; " +                          // Allow fonts from self
-      "connect-src 'self'; " +                      // Allow connections to the same origin
-      "frame-src 'none'; " +                         // Prevent embedding frames
-      "object-src 'none';"                           // Disallow plugins like Flash
-    );
-    next();
-  });
+// app.use((req, res, next) => {
+//     res.setHeader("Content-Security-Policy", 
+//       "default-src 'self'; " +
+//       "script-src 'self' https://vercel.live; " +   // Allow Vercel scripts
+//       "style-src 'self' 'unsafe-inline'; " +        // Allow inline styles
+//       "img-src 'self' data:; " +                    // Allow images from self and data URIs
+//       "font-src 'self'; " +                          // Allow fonts from self
+//       "connect-src 'self'; " +                      // Allow connections to the same origin
+//       "frame-src 'none'; " +                         // Prevent embedding frames
+//       "object-src 'none';"                           // Disallow plugins like Flash
+//     );
+//     next();
+//   });
 app.use(express.urlencoded())
 app.set("view engine","ejs")//to set ejs template engine
 app.set("views ","views")
